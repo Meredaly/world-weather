@@ -72,7 +72,7 @@
 
   onMounted(() => {
     const currentLocation = Intl.DateTimeFormat().resolvedOptions().timeZone.split('/')
-    const locationCountry = currentLocation[currentLocation.length - 1]
+    const locationCountry = currentLocation[currentLocation.length - 1 > 0 ? currentLocation.length - 1 : 0]
     popUpInput.value = locationCountry
     addItem()
   })
