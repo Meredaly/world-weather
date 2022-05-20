@@ -57,10 +57,9 @@
   import { useVuelidate } from '@vuelidate/core'
   import { required } from '@vuelidate/validators'
   import WeatherCard from './components/WeatherCard.vue'
-  import axios from 'axios'
+  import { getWeatherRes } from '@/api'
   import { ref, reactive, onMounted, computed } from 'vue'
 
-  const apiKey = '20c9612bdeb7957c1340f5aa6b2f7d69'
   const popUpVisibility = ref(false)
   const popUpInput = ref('')
   const cardItems = reactive([])
@@ -91,7 +90,7 @@
     v$.value.$touch()
     if (v$.value.$error) return
     popUpVisibility.value = false
-    const weather = await getWeather(popUpInput.value)
+    const weather = await getWeatherRes(popUpInput.value)
     cardItems.push({
       id: new Date().getTime(),
       region: weather.name,
@@ -103,22 +102,12 @@
     })
     popUpInput.value = ''
   }
-  const getWeather = async (location) => {
-    try {
-      const response = await axios.get(
-        `http://api.openweathermap.org/data/2.5/weather?units=metric&lang=en&APPID=${apiKey}&q=${location}`
-      )
-      return response.data
-    } catch (error) {
-      console.log(error)
-    }
-  }
   const removeWeather = (index) => {
     cardItems.splice(index, 1)
   }
 
   const reloadWeather = async (index) => {
-    const weather = await this.getWeather(this.cardItems[index].region)
+    const weather = await this.getWeatherRes(this.cardItems[index].region)
     cardItems[index] = {
       id: index,
       region: weather.name,
