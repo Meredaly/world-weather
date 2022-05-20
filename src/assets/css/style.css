@@ -1,0 +1,529 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+
+html,
+body {
+  min-width: 320px;
+}
+
+body {
+  line-height: 1;
+  font-size: 14px;
+  font-family: "";
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: "";
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+body {
+  font-size: 18px;
+  font-family: 'Lato';
+}
+
+body._lock {
+  overflow: hidden;
+}
+
+.grid__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.grid__col-12, .grid__col-11, .grid__col-10, .grid__col-9, .grid__col-8, .grid__col-7, .grid__col-6, .grid__col-5, .grid__col-4, .grid__col-3, .grid__col-2, .grid__col-1 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.grid__col-12 {
+  width: 100%;
+}
+
+.grid__col-11 {
+  width: 91.66667%;
+}
+
+.grid__col-10 {
+  width: 83.33333%;
+}
+
+.grid__col-9 {
+  width: 75%;
+}
+
+.grid__col-8 {
+  width: 66.66667%;
+}
+
+.grid__col-7 {
+  width: 58.33333%;
+}
+
+.grid__col-6 {
+  width: 50%;
+}
+
+.grid__col-5 {
+  width: 41.66667%;
+}
+
+.grid__col-4 {
+  width: 33.33333%;
+}
+
+.grid__col-3 {
+  width: 25%;
+}
+
+.grid__col-2 {
+  width: 16.66667%;
+}
+
+.grid__col-1 {
+  width: 8.33333%;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 70px;
+  line-height: 80px;
+  color: #1b1b1b;
+}
+
+@media screen and (max-width: 425px) {
+  h1 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #1b1b1b;
+}
+
+@media screen and (max-width: 425px) {
+  h2 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+}
+
+h3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #767676;
+}
+
+@media screen and (max-width: 425px) {
+  h3 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1b1b1b;
+}
+
+@media screen and (max-width: 425px) {
+  p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+button {
+  font-family: 'Lato';
+  background-color: transparent;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #9b51e0;
+}
+
+@media screen and (max-width: 425px) {
+  button {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+button:disabled {
+  color: #c1c1c1;
+  pointer-events: none;
+}
+
+.wrapper {
+  padding-top: 24px;
+  padding-bottom: 50px;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1560px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.main-name {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.second-name {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.weather-card__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.weather-card__column {
+  width: 25%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 1280px) {
+  .weather-card__column {
+    width: calc(100% / 3);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .weather-card__column {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .weather-card__column {
+    width: 100%;
+  }
+}
+
+.weather-card__column_main {
+  margin-bottom: 80px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .weather-card__column_main {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .weather-card__column_main {
+    margin-bottom: 0px;
+  }
+}
+
+.weather-card__column_main .weather-card__box {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 824px;
+}
+
+.weather-card__box {
+  -webkit-box-shadow: 0px 2px 10px rgba(10, 10, 10, 0.25);
+          box-shadow: 0px 2px 10px rgba(10, 10, 10, 0.25);
+  border-radius: 6px;
+  padding: 24px;
+}
+
+.weather-card__location {
+  padding-bottom: 15px;
+}
+
+.weather-card__location-region {
+  padding-bottom: 40px;
+}
+
+.weather-card__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #c4c4c4;
+  margin-bottom: 16px;
+}
+
+.weather-card__time {
+  margin-top: -8px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: right;
+  color: #a8a8a8;
+}
+
+.weather-card__controllers {
+  margin-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.weather-card__reload-button {
+  margin-left: auto;
+}
+
+.add-weather {
+  color: rgba(255, 255, 255, 0.87);
+  background: #9b51e0;
+  -webkit-box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+  width: 56px;
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  bottom: 34px;
+  right: 34px;
+  z-index: 1;
+}
+
+.pop-up {
+  position: fixed;
+  background: rgba(11, 11, 11, 0.5);
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.pop-up__container {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.14), 0px 6px 30px rgba(0, 0, 0, 0.12), 0px 8px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.14), 0px 6px 30px rgba(0, 0, 0, 0.12), 0px 8px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 24px;
+  max-width: 751px;
+  width: 100%;
+}
+
+.pop-up__title {
+  margin-bottom: 16px;
+}
+
+.pop-up__sub-title {
+  padding-bottom: 67px;
+}
+
+.pop-up__input {
+  margin-bottom: 140px;
+}
+
+.pop-up__controllers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pop-up__controller:not(:first-child) {
+  margin-left: 31px;
+}
+
+.pop-up__controller_clear {
+  margin-right: auto;
+}
+
+.input {
+  position: relative;
+}
+
+.input input {
+  font-family: 'Lato';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #1b1b1b;
+  color: #1b1b1b;
+  width: 100%;
+}
+
+.input input::-webkit-input-placeholder {
+  color: #c1c1c1;
+}
+
+.input input:-ms-input-placeholder {
+  color: #c1c1c1;
+}
+
+.input input::-ms-input-placeholder {
+  color: #c1c1c1;
+}
+
+.input input::placeholder {
+  color: #c1c1c1;
+}
+
+@media screen and (max-width: 768px) {
+  .input input {
+    font-size: 16px;
+    line-height: 18px;
+    padding-bottom: 10px;
+  }
+}
+
+.input span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ff0101;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 12px);
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .input span {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.input_error input {
+  border-color: #ff0101;
+}
+
+.input_error span {
+  display: block;
+}
